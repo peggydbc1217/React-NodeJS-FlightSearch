@@ -1,0 +1,36 @@
+@import "../../assets/scss/custom";
+
+.sidebar {
+  text-align: center;
+
+  &_option {
+    list-style: none;
+  }
+  &_fs {
+    font-size: 1.25rem;
+  }
+
+  &_link {
+    &:hover {
+      color: $primary !important;
+      font-weight: bold;
+    }
+  }
+}
+
+.sidebar_active {
+  transition: all 0.3s ease-in-out;
+  color: $primary !important;
+  font-weight: bold;
+  transform: translateX(-15px);
+}
+
+@media (max-width: 575px) {
+  .sidebar_fs {
+    font-size: 1rem;
+  }
+
+  .timeUse {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,8 @@
+@import "../../../assets/scss/custom";
+
+.card-scroll-rwd {
+  overflow: scroll;
+  @include respond(lg) {
+    overflow: visible;
+  }
+}

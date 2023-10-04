@@ -1,0 +1,18 @@
+@import "../../../assets/scss/custom";
+
+.flightSearch-img-rwd-height {
+  height: 100%;
+
+  @include respond(lg) {
+    height: 358px;
+  }
+}
+
+.carousel-item {
+  opacity: 0.25;
+}
+
+.carousel-item-active {
+  opacity: 1;
+  transition: all 2.5s ease-in-out;
+}

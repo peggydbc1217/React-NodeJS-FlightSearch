@@ -1,0 +1,17 @@
+@import "../../../assets/scss/custom";
+
+.cta-left {
+  &-textAlign {
+    text-align: center;
+    @include respond(md) {
+      text-align: left;
+    }
+  }
+
+  &-width {
+    width: 100%;
+    @include respond(md) {
+      width: auto;
+    }
+  }
+}

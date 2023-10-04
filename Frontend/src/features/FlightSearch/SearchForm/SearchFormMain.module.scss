@@ -1,0 +1,27 @@
+@import "../../../assets/scss/custom";
+
+.searchForm-page {
+  .left-section {
+    margin-right: -($grid-gutter-width * 0.5);
+  }
+
+  .right-section {
+    margin-left: -($grid-gutter-width * 0.5);
+  }
+
+  .fs-11rem {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .searchForm-page {
+    .w-lg-20 {
+      width: 20%;
+    }
+
+    .w-lg-80 {
+      width: 80%;
+    }
+  }
+}

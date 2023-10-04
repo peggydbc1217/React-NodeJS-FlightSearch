@@ -1,0 +1,39 @@
+@import "../../assets/scss/custom";
+
+.map-rwd-size {
+  height: 500px;
+  width: 100%;
+  @include respond(md) {
+    height: 1000px;
+  }
+}
+
+// 360 跟 0 是朝上最上方  往右開始增加角度
+.realTimeFlight-dir {
+  transform: rotate(100deg);
+}
+
+.mapContainer {
+  // flex: 1;
+  // position: static;
+  width: 100%;
+  height: 300px;
+  @include respond(md) {
+    height: 100%;
+  }
+  z-index: 1;
+}
+
+.map {
+  height: 300px;
+  // position: static;
+  border: 3px solid #eac14a;
+  @include respond(md) {
+    height: 600px;
+  }
+
+  width: 100%;
+  z-index: 1;
+  // position: static;
+  // z-index: 1000;
+}

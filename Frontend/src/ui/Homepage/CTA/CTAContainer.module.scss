@@ -1,0 +1,9 @@
+@import "../../../assets/scss/custom";
+
+.cta-mt {
+  margin-top: 80px;
+
+  @include respond(lg) {
+    margin-top: 240px;
+  }
+}

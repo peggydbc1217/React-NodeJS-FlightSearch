@@ -1,0 +1,24 @@
+@import "../../../assets/scss/custom";
+.carousel-hover {
+  background-color: #ead390;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #ead390;
+    transform: translateY(-0.5rem);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.flightSearch-arrow-position {
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  @include respond(lg) {
+    transform: translateY(-100%);
+    right: 9.4%;
+  }
+}

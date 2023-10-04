@@ -1,0 +1,41 @@
+@import "../../assets/scss/custom";
+////HERO///////
+
+.img-height-setting {
+  height: 764px;
+
+  @include respond(lg) {
+    height: 1000px;
+  }
+}
+
+.clip-path-hero {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
+  @include respond(sm) {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+}
+
+.hero-text-mt {
+  margin-top: 50px;
+  @include respond(sm) {
+    margin-top: 50px;
+  }
+
+  @include respond(md) {
+    margin-top: 80px;
+  }
+
+  @include respond(lg) {
+    margin-top: 180px;
+  }
+
+  @include respond(xl) {
+    margin-top: 290px;
+  }
+
+  @include respond(xxl) {
+    margin-top: 290px;
+  }
+}

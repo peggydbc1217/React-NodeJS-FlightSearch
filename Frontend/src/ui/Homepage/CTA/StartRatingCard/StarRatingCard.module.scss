@@ -1,0 +1,45 @@
+@import "../../../../assets/scss/custom";
+
+.cta_right_card {
+  z-index: 0;
+  &-side {
+    position: static;
+    width: 100%;
+
+    transition: all 1s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($dark, 0.15);
+
+    @include respond(md) {
+      position: absolute;
+      height: 328px;
+      width: 300px;
+    }
+  }
+
+  &-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include respond(md) {
+      top: 30%;
+    }
+
+    transform: rotateY(180deg);
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($primary, 0.2),
+      rgba($primary, 0.85)
+    );
+  }
+
+  &:hover &-front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &-back {
+    transform: rotateY(0deg);
+  }
+}

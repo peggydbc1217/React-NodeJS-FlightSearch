@@ -1,0 +1,34 @@
+@import "../../assets/scss/custom";
+
+.footer-eNewsLetter-img-height {
+  height: 221px;
+  @include respond(lg) {
+    height: 301px;
+  }
+}
+
+.newsletter-input {
+  transition: all 0.3s;
+
+  &-label {
+    transition: all 0.3s;
+    display: block;
+
+    color: $primary;
+    font-weight: bold;
+
+    @include respond(lg) {
+      color: $secondary;
+    }
+  }
+
+  &:placeholder {
+    overflow: scroll;
+  }
+
+  &:placeholder-shown + &-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1rem);
+  }
+}

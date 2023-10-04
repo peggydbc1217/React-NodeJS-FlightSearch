@@ -1,0 +1,23 @@
+.carousel-hover {
+  background-color: #ead390;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #ead390;
+    transform: translateY(-0.5rem);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.pagination-btn-focus {
+  &:focus {
+    background-color: #f1be22;
+  }
+}
+
+.pagination-btn-active {
+  background-color: #f1be22;
+}
